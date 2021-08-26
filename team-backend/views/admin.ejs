@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Admin</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      html {
+        background-image: linear-gradient(0.04turn, #2a4300, #dfff00);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+      }
+
+      .hh {
+        margin-top: 50px;
+        margin-left: 50px;
+        color: #fff;
+      }
+      form {
+        background-color: #fff;
+        max-width: 40%;
+        padding: 50px 20px 50px 50px;
+        border-radius: 15px;
+        margin: 100px auto 0 !important;
+      }
+      input {
+        width: 70%;
+        padding: 5px;
+        font-size: 18px;
+        margin: 5px 0;
+      }
+      form > p {
+        margin-bottom: 20px;
+      }
+      select {
+        width: 70%;
+        display: block;
+        margin: 5px 0;
+        padding: 7px;
+      }
+
+      button {
+        padding: 5px 15px;
+        color: #fff;
+        background-color: #789400;
+        border-radius: 2px;
+        border: none;
+      }
+      @media (max-width: 780px) {
+        .Carousel-indicators-21,
+        .Carousel-indicators-24 {
+          padding-right: 20px !important;
+        }
+        html {
+          background-image: linear-gradient(-0.8turn, #2a4300, #dfff00);
+        }
+        form {
+          background-color: #fff;
+          max-width: 90%;
+          padding: 50px 20px;
+          border-radius: 15px;
+          margin: 100px auto 0 !important;
+        }
+        input {
+          width: 100%;
+          padding: 5px;
+          font-size: 18px;
+          margin: 5px 0;
+        }
+        form > p {
+          margin-bottom: 20px;
+        }
+        select {
+          width: 100%;
+          display: block;
+          margin: 5px 0;
+          padding: 7px;
+        }
+
+        button {
+          padding: 5px 15px;
+          color: #fff;
+          background-color: #789400;
+          border-radius: 2px;
+          border: none;
+        }
+      }
+    </style>
+    <h1 class="hh">Welcome</h1>
+    <form class="" action="/adminpost" method="post">
+      <p>Post A Researcher</p>
+      <div class="">
+        <select name="type" id="">
+          <!-- <option value="doctor">Doctoral Researcher</option> -->
+          <option value="master">Masters Researcher</option>
+          <option value="under">Undergraduate Researcher</option></select
+        ><select name="timeline" id="">
+          <option value="present">Present</option>
+          <option value="past">Past</option>
+        </select>
+      </div>
+
+      <div class="">
+        <p>Project Title</p>
+        <input type="text" name="title" value="" />
+        <p>Name of researcher</p>
+        <input type="text" name="name" value="" />
+        <p>Research Gate Url</p>
+        <input type="text" name="url" value="" />
+      </div>
+
+      <div class="">
+        <p><button type="submit" name="button"><=%Submit%></button></p>
+      </div>
+    </form>
+  </body>
+</html>
